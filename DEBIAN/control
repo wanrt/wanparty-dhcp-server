@@ -1,0 +1,10 @@
+Source: wanparty-dhcp-server
+Section: unknown
+Priority: extra
+Maintainer: Sohaib Lafifi <sohaib.lafifi@univ-artois.fr>
+Homepage: wanparty.neticien.net
+Package: wanparty-dhcp-server
+Version: 1.11.24
+Architecture: all
+Depends:   isc-dhcp-server, wanparty-base, wanparty-network-config  
+Description: installation du serveur dhcp locale de la wan
