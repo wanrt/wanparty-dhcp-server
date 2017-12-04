@@ -11,7 +11,8 @@ case "$1" in
     sed -i -e "s/INTERFACES=\"\"/INTERFACES=\"eth1\"/" /etc/default/isc-dhcp-server
     sed -i -e "s/INTERFACESv4=\"\"/INTERFACESv4=\"eth1\"/" /etc/default/isc-dhcp-server
     cp /usr/share/wanparty/etc/dhcpd.conf /etc/dhcp/dhcpd.conf
-     sed -i -e "s/DEPT/$DEPARTEMENT/g" /etc/dhcp/dhcpd.conf
+    sed -i -e "s/DEPT/$DEPARTEMENT/g" /etc/dhcp/dhcpd.conf
+    sed -i -e "s/DEPT/$DEPARTEMENT/g" /etc/dhcpd.conf
     systemctl start rsyslog
     systemctl start isc-dhcp-server 
   
